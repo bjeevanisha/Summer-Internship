@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Travel Blog</title>
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:url("background img.jpg") no-repeat center center/cover;
+    min-height:100vh;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    min-height:100vh;
+}
+
+nav{
+    background:rgba(0,0,0,0.8);
+    padding:15px;
+    position:fixed;
+    width:100%;
+    top:0;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 12px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#ff9800;
+}
+
+/* MAIN LAYOUT */
+.main-container{
+    display:flex;
+    max-width:1400px;
+    margin:auto;
+    gap:20px;
+    padding-top:70px;
+}
+
+.content{
+    flex:3;
+}
+
+.sidebar{
+    flex:1;
+    padding:30px 15px;
+}
+
+section{
+    padding:50px 20px;
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    font-size:40px;
+    color:#ffcc70;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+ul{
+    margin-left:20px;
+    line-height:1.8;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+#paris{
+    border-left:5px solid #ff4d6d;
+}
+
+#bali{
+    border-left:5px solid #00d4ff;
+}
+
+#tokyo{
+    border-left:5px solid #7cff6b;
+}
+
+#chennai{
+    border-left:5px solid #ffcc00;
+}
+
+/* SIDEBAR */
+.side-box{
+    background:rgba(255,255,255,0.15);
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.side-box h2{
+    text-align:center;
+    color:#ffcc70;
+}
+
+.about-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:block;
+    margin:15px auto;
+    object-fit:cover;
+}
+
+.side-box p{
+    text-align:center;
+    line-height:1.6;
+}
+
+.side-box ul{
+    list-style:none;
+    margin-left:0;
+}
+
+.side-box li{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.8);
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#paris">Paris</a>
+  <a href="#bali">Bali</a>
+  <a href="#tokyo">Tokyo</a>
+  <a href="#chennai">Chennai</a>
+</nav>
+
+<div class="main-container">
+
+<div class="content">
+
+<section id="home">
+  <h1>My Travel Blog 🌍</h1>
+  <div class="card">
+    <p>
+      Welcome to my travel blog! Explore beautiful destinations around the world with tips, experiences, and guides.
+    </p>
+  </div>
+</section>
+
+<section id="paris">
+  <h1>Paris 🇫🇷</h1>
+  <div class="card">
+    <h2>Places to Visit</h2>
+    <ul>
+      <li>Eiffel Tower</li>
+      <li>Louvre Museum</li>
+      <li>Notre Dame</li>
+    </ul>
+
+    <div style="display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;justify-content:center;">
+
+      <div style="text-align:center;">
+        <img src="paris1.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Eiffel Tower</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="paris2.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Louvre Museum</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="paris3.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Notre Dame</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="bali">
+  <h1>Bali 🇮🇩</h1>
+  <div class="card">
+    <h2>Top Activities</h2>
+    <ul>
+      <li>Beach surfing</li>
+      <li>Temple visits</li>
+      <li>Jungle trekking</li>
+    </ul>
+
+    <div style="display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;justify-content:center;">
+
+      <div style="text-align:center;">
+        <img src="bali1.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Beach surfing</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="bali2.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Temple visits</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="bali3.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Jungle trekking</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tokyo">
+  <h1>Tokyo 🇯🇵</h1>
+  <div class="card">
+    <h2>Must Try</h2>
+    <ul>
+      <li>Sushi</li>
+      <li>Shibuya Crossing</li>
+      <li>Anime District</li>
+    </ul>
+
+    <div style="display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;justify-content:center;">
+
+      <div style="text-align:center;">
+        <img src="tokyo1.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Sushi</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="tokyo2.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Shibuya Crossing</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="tokyo3.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Anime District</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="chennai">
+  <h1>Chennai 🇮🇳</h1>
+  <div class="card">
+    <h2>Famous Places</h2>
+    <ul>
+      <li>Marina Beach</li>
+      <li>Kapaleeshwarar Temple</li>
+      <li>Mahabalipuram</li>
+    </ul>
+
+    <div style="display:flex;gap:15px;margin-top:20px;flex-wrap:wrap;justify-content:center;">
+
+      <div style="text-align:center;">
+        <img src="chn1.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Marina Beach</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="chn2.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Kapaleeshwarar Temple</p>
+      </div>
+
+      <div style="text-align:center;">
+        <img src="chn3.jpg" width="200" height="140" style="border-radius:10px;">
+        <p>Mahabalipuram</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+  <div class="side-box">
+    <h2>About Me</h2>
+    <img src="about.jpg" class="about-img">
+    <p>
+      Hi! I'm a travel enthusiast who loves exploring new places and sharing travel experiences.
+    </p>
+  </div>
+
+  <div class="side-box">
+    <h2>Top Destinations</h2>
+    <ul>
+      <li>📍 Paris, France</li>
+      <li>📍 Bali, Indonesia</li>
+      <li>📍 Tokyo, Japan</li>
+      <li>📍 Chennai, India</li>
+      <li>📍 Manali, India</li>
+    </ul>
+  </div>
+
+  <div class="side-box">
+    <h2>Travel Tips</h2>
+    <ul>
+      <li>⭐ Plan your trip in advance</li>
+      <li>⭐ Pack light and smart</li>
+      <li>⭐ Respect local culture</li>
+      <li>⭐ Try local food</li>
+      <li>⭐ Capture memories</li>
+    </ul>
+  </div>
+
+</div>
+
+</div>
+
+<footer>
+  <p>© 2026 My Travel Blog | Contact No: 9876543218</p>
+</footer>
+
+</div>
+
+</body>
+</html>
