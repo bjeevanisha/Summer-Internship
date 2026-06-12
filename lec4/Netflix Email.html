@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Netflix Email</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Background Section */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+url("img1.jpg");    
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+/* Content */
+
+.content{
+    max-width:800px;
+    padding:20px;
+}
+
+.content h1{
+    font-size:60px;
+    font-family:Georgia, serif;
+    margin-bottom:20px;
+}
+
+.content h3{
+    font-size:28px;
+    margin-bottom:20px;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+.content p{
+    font-size:20px;
+    margin-bottom:25px;
+    font-family:Verdana, sans-serif;
+}
+
+/* Form */
+
+.form-box{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.form-box input{
+    width:350px;
+    padding:15px;
+    font-size:18px;
+    border:none;
+    border-radius:5px;
+}
+
+.form-box button{
+    background:red;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Hover Effect */
+
+.form-box button:hover{
+    background:darkred;
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="content">
+
+<h1>Unlimited Movies, TV Shows and More</h1>
+
+<h3>Watch anywhere. Cancel anytime.</h3>
+
+<p>
+Ready to watch? Enter your email to create or restart your membership.
+</p>
+
+<div class="form-box">
+
+<input type="email" placeholder="Enter your email">
+
+<button>Get Started ></button>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
